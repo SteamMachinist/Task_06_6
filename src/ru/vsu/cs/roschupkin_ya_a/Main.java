@@ -70,14 +70,14 @@ public class Main
     {
         double dividend = Math.pow(-1, termNumber) * Math.pow(x, termNumber * 2);
 
-        double divider = calculateFactorial(termNumber * 2 + 1);
+        long divider = calculateFactorial(termNumber * 2 + 1);
 
         return dividend / divider;
     }
 
-    static double calculateFactorial(int number)
+    static long calculateFactorial(int number)
     {
-        int factorial = 1;
+        long factorial = 1;
 
         for (int i = 1; i <= number; i++)
         {
